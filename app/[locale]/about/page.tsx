@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { DEFAULT_LOCALE, BUSINESS } from "@/lib/constants";
 import { getDictionary, isLocale } from "@/lib/i18n";
 import { Container } from "@/components/ui/Container";
@@ -35,10 +34,6 @@ export default async function AboutPage({
       <Container className="max-w-3xl">
         <Reveal>
           <SectionHeading eyebrow={dict.aboutPage.eyebrow} title={dict.aboutPage.title} />
-
-          <div className="mt-8 flex items-center gap-4">
-            <Image src="/logo.png" alt={BUSINESS.name} width={120} height={60} unoptimized className="h-12 w-auto" />
-          </div>
 
           <p className="mt-8 text-lg text-foreground/90">{dict.aboutPage.intro}</p>
 
