@@ -2,7 +2,8 @@ export const LOCALES = ["de", "en"] as const;
 export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = "de";
 
-export const SITE_URL = "https://www.jj-fair-automobile.de";
+// TODO: switch to the real domain once purchased — using the Vercel URL for SEO in the meantime.
+export const SITE_URL = "https://j-j-automobile.vercel.app";
 
 export const BUSINESS = {
   name: "J&J Fair Automobile",
