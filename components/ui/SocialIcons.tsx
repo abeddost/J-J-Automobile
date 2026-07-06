@@ -66,8 +66,8 @@ export function TikTokIcon({ size = 20, className }: IconProps) {
         stroke="white"
         strokeOpacity="0.15"
       />
-      <path d={note} fill="#25F4EE" transform="translate(-0.9 0.5)" />
-      <path d={note} fill="#FE2C55" transform="translate(0.9 -0.5)" />
+      {/* Solid mark (no color-fringe layers): the multi-color "glitch" version
+          turns into an illegible blur at the small sizes used on this site. */}
       <path d={note} fill="#FFFFFF" />
     </svg>
   );
