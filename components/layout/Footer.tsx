@@ -85,27 +85,27 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground/70 transition-colors hover:border-gold hover:text-gold-dark"
+              className="inline-flex transition-transform duration-200 hover:-translate-y-0.5 hover:scale-105"
             >
-              <FacebookIcon />
+              <FacebookIcon size={38} />
             </a>
             <a
               href={SOCIAL.instagram}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground/70 transition-colors hover:border-gold hover:text-gold-dark"
+              className="inline-flex transition-transform duration-200 hover:-translate-y-0.5 hover:scale-105"
             >
-              <InstagramIcon />
+              <InstagramIcon size={38} />
             </a>
             <a
               href={SOCIAL.tiktok}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground/70 transition-colors hover:border-gold hover:text-gold-dark"
+              className="inline-flex transition-transform duration-200 hover:-translate-y-0.5 hover:scale-105"
             >
-              <TikTokIcon />
+              <TikTokIcon size={38} />
             </a>
           </div>
         </div>

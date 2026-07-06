@@ -17,9 +17,9 @@ export function SocialRail() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white/90 text-foreground/70 shadow-sm backdrop-blur transition-all duration-200 hover:-translate-y-0.5 hover:border-gold hover:text-gold-dark hover:shadow-md"
+          className="inline-flex drop-shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:scale-110"
         >
-          <Icon size={19} />
+          <Icon size={40} />
         </a>
       ))}
     </div>
