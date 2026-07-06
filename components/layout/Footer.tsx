@@ -58,7 +58,13 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
     <footer className="border-t border-border bg-surface">
       <Container className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Image src="/logo.png" alt={BUSINESS.name} width={160} height={80} className="h-12 w-auto" />
+          <Image
+            src="/logo-horizontal.png"
+            alt={BUSINESS.name}
+            width={246}
+            height={100}
+            className="h-9 w-auto"
+          />
           <p className="mt-4 max-w-xs text-sm text-muted">{dict.footer.tagline}</p>
         </div>
 

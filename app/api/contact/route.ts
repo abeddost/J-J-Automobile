@@ -29,11 +29,17 @@ export async function POST(request: Request) {
 
   const { name, email, phone, message } = parsed.data;
 
+  // Resend's sandbox sender (no verified domain yet) can only deliver to the
+  // Resend account's own signup address. Set CONTACT_TO_EMAIL to override the
+  // recipient until a domain is verified; remove it afterwards to fall back
+  // to the real business inbox.
+  const toEmail = process.env.CONTACT_TO_EMAIL || BUSINESS.email;
+
   try {
     const resend = new Resend(apiKey);
     const { error } = await resend.emails.send({
       from: `J&J Fair Automobile Website <onboarding@resend.dev>`,
-      to: BUSINESS.email,
+      to: toEmail,
       replyTo: email,
       subject: `Neue Kontaktanfrage von ${name}`,
       text: [

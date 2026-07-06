@@ -39,7 +39,8 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    "/((?!api|_next/static|_next/image|hero-frames|logo.png|favicon.ico|sitemap.xml|robots.txt).*)",
-  ],
+  // Skip API routes, Next internals, and any request for a static file in
+  // public/ (anything with a file extension) — not just specific filenames,
+  // so new assets dropped into public/ never get wrongly locale-prefixed.
+  matcher: ["/((?!api|_next/static|_next/image|.*\\..*).*)"],
 };

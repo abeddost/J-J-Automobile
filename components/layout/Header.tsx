@@ -18,11 +18,12 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 sm:px-8">
         <Link href={`/${locale}`} className="flex items-center gap-2" aria-label={BUSINESS.name}>
           <Image
-            src="/logo.png"
+            src="/logo-horizontal.png"
             alt={BUSINESS.name}
-            width={160}
-            height={80}
-            className="h-10 w-auto"
+            width={246}
+            height={100}
+            priority
+            className="h-8 w-auto sm:h-9"
           />
         </Link>
 

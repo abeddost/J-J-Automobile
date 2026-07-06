@@ -97,6 +97,33 @@ export function HeroReveal({ locale, dict }: { locale: Locale; dict: Dictionary 
       // Bias toward the bottom so the car sits clear of the intro copy above it.
       const drawY = Math.min(ch - drawH - ch * 0.06, ch * 0.5 - drawH * 0.15);
       ctx.drawImage(img, drawX, drawY, drawW, drawH);
+
+      // The source photo's "white" studio background isn't quite pure white
+      // (it's ~rgb(248,250,253) with a soft vignette), which shows up as a
+      // faint rectangular seam against the page's true white. Feather a thin
+      // band just inside each edge of the drawn frame back to solid white so
+      // it blends invisibly — the car never reaches this close to the frame
+      // edge in the source footage, so it's never clipped.
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const feather = 36 * dpr;
+      const fadeEdge = (x0: number, y0: number, x1: number, y1: number) => {
+        const gradient = ctx.createLinearGradient(x0, y0, x1, y1);
+        gradient.addColorStop(0, "rgba(255,255,255,0)");
+        gradient.addColorStop(1, "rgba(255,255,255,1)");
+        return gradient;
+      };
+
+      ctx.fillStyle = fadeEdge(drawX, drawY + feather, drawX, drawY);
+      ctx.fillRect(drawX, drawY, drawW, feather);
+
+      ctx.fillStyle = fadeEdge(drawX, drawY + drawH - feather, drawX, drawY + drawH);
+      ctx.fillRect(drawX, drawY + drawH - feather, drawW, feather);
+
+      ctx.fillStyle = fadeEdge(drawX + feather, drawY, drawX, drawY);
+      ctx.fillRect(drawX, drawY, feather, drawH);
+
+      ctx.fillStyle = fadeEdge(drawX + drawW - feather, drawY, drawX + drawW, drawY);
+      ctx.fillRect(drawX + drawW - feather, drawY, feather, drawH);
     }
 
     // Preload: first batch blocking-ish, rest trickle in background.
