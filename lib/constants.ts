@@ -14,7 +14,7 @@ export const BUSINESS = {
     city: "Mainz-Kastel",
     country: "Deutschland",
   },
-  email: "jj-fair-automobile@outlook.de",
+  email: "jjautomobile2026@gmail.com",
   phones: [
     { display: "0176 63259854", href: "tel:+4917663259854" },
     { display: "0176 30376401", href: "tel:+4917630376401" },
