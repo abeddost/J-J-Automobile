@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 import { SocialRail } from "@/components/layout/SocialRail";
 import { ScrollProgressBar } from "@/components/layout/ScrollProgressBar";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
+import { PageTransition } from "@/components/layout/PageTransition";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -97,7 +98,9 @@ export default async function LocaleLayout({
         />
         <ScrollProgressBar />
         <Header locale={locale} dict={dict} />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer locale={locale} dict={dict} />
         <SocialRail />
         <WhatsAppButton />

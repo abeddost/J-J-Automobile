@@ -12,7 +12,7 @@ import { MapEmbed } from "@/components/contact/MapEmbed";
 
 export function ContactTeaser({ dict }: { dict: Dictionary }) {
   return (
-    <section className="py-24 sm:py-32">
+    <section className="bg-surface py-24 sm:py-32">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -44,7 +44,7 @@ export function ContactTeaser({ dict }: { dict: Dictionary }) {
             </div>
           </div>
 
-          <div className="mt-10 grid gap-8 rounded-3xl border border-border bg-surface p-8 sm:p-10 lg:grid-cols-2">
+          <div className="mt-10 grid gap-8 rounded-3xl border border-border bg-white p-8 sm:p-10 lg:grid-cols-2">
             <div>
               <h3 className="font-heading text-xl font-semibold text-foreground">
                 {dict.contactPage.formTitle}
