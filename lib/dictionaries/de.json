@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "home": {
+      "title": "J&J Fair Automobile – Ihr Autohaus in Mainz-Kastel",
+      "description": "J&J Fair Automobile in Mainz-Kastel: fairer Ankauf und Verkauf von Gebrauchtwagen. Persönliche Beratung, faire Preise, geprüfte Qualität."
+    },
+    "about": {
+      "title": "Über uns",
+      "description": "Lernen Sie J&J Fair Automobile kennen – ein inhabergeführtes Autohaus in Mainz-Kastel von Javad Ayoubi und Jusuf Dyanat."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Kontaktieren Sie J&J Fair Automobile in Mainz-Kastel telefonisch, per E-Mail oder über unser Kontaktformular."
+    },
+    "impressum": {
+      "title": "Impressum",
+      "description": "Impressum von J&J Fair Automobile GbR."
+    },
+    "datenschutz": {
+      "title": "Datenschutzerklärung",
+      "description": "Datenschutzerklärung von J&J Fair Automobile."
+    }
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "inventory": "Fahrzeuge auf mobile.de",
+    "call": "Anrufen"
+  },
+  "hero": {
+    "eyebrow": "Faire Preise. Ehrliche Beratung.",
+    "title": "Ihr Fahrzeug in besten Händen",
+    "subtitle": "J&J Fair Automobile – An- und Verkauf hochwertiger Gebrauchtwagen in Mainz-Kastel. Persönlich, transparent, fair.",
+    "ctaPrimary": "Fahrzeuge ansehen",
+    "ctaSecondary": "Kontakt aufnehmen",
+    "scrollHint": "Scrollen"
+  },
+  "whyUs": {
+    "eyebrow": "Warum J&J Fair Automobile",
+    "title": "Fair im Namen, fair im Handeln",
+    "items": [
+      {
+        "title": "Faire Preise",
+        "desc": "Transparente Bewertung und ehrliche Preisgestaltung – ohne versteckte Kosten."
+      },
+      {
+        "title": "Geprüfte Qualität",
+        "desc": "Jedes Fahrzeug wird sorgfältig ausgewählt und begutachtet, bevor es zu uns kommt."
+      },
+      {
+        "title": "Familiengeführt",
+        "desc": "Als inhabergeführtes Autohaus stehen wir persönlich für jeden Handel gerade."
+      },
+      {
+        "title": "Persönlicher Service",
+        "desc": "Von der ersten Anfrage bis zur Übergabe – wir nehmen uns Zeit für Sie."
+      }
+    ]
+  },
+  "buySell": {
+    "eyebrow": "Ankauf & Verkauf",
+    "title": "Aktuelle Fahrzeuge & Ankauf",
+    "inventoryTitle": "Unsere Fahrzeuge",
+    "inventoryDesc": "Unser aktuelles Angebot finden Sie auf mobile.de. Schauen Sie vorbei oder kontaktieren Sie uns direkt – wir beraten Sie gerne persönlich.",
+    "inventoryCta": "Zu mobile.de",
+    "sellTitle": "Fahrzeug verkaufen",
+    "sellDesc": "Sie möchten Ihr Fahrzeug verkaufen? Wir erstellen Ihnen ein faires, unverbindliches Angebot – schnell und unkompliziert.",
+    "sellCta": "Jetzt anfragen"
+  },
+  "contactTeaser": {
+    "eyebrow": "Besuchen Sie uns",
+    "title": "Wir freuen uns auf Sie",
+    "directions": "Route planen",
+    "callUs": "Anrufen",
+    "emailUs": "E-Mail schreiben"
+  },
+  "footer": {
+    "tagline": "Faire Preise. Ehrliche Beratung. Ihr Autohaus in Mainz-Kastel.",
+    "quickLinksTitle": "Navigation",
+    "contactTitle": "Kontakt",
+    "followTitle": "Folgen Sie uns",
+    "legalImpressum": "Impressum",
+    "legalDatenschutz": "Datenschutz",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "aboutPage": {
+    "eyebrow": "Über uns",
+    "title": "Zwei Namen, ein Versprechen: Fair.",
+    "intro": "J&J Fair Automobile wurde von Javad Ayoubi und Jusuf Dyanat gegründet – aus der Überzeugung, dass Autokauf und -verkauf auf Vertrauen basieren sollte.",
+    "paragraphs": [
+      "Als inhabergeführtes Autohaus in Mainz-Kastel legen wir Wert auf persönliche Beratung, transparente Preise und sorgfältig ausgewählte Fahrzeuge. Bei uns sind Sie keine Nummer – wir nehmen uns Zeit für Ihre Wünsche und Fragen.",
+      "Ob Sie ein Fahrzeug kaufen oder verkaufen möchten: Unser Ziel ist es, dass Sie sich bei jedem Schritt gut aufgehoben fühlen – fair, ehrlich und ohne Druck."
+    ],
+    "valuesTitle": "Unsere Werte",
+    "values": [
+      { "title": "Vertrauen", "desc": "Offene Kommunikation und ehrliche Einschätzungen – vom ersten Gespräch an." },
+      { "title": "Qualität", "desc": "Wir wählen jedes Fahrzeug sorgfältig aus, bevor es unser Hof verlässt." },
+      { "title": "Nähe", "desc": "Als kleines Team sind wir persönlich erreichbar – vor Ort in Mainz-Kastel." }
+    ]
+  },
+  "contactPage": {
+    "eyebrow": "Kontakt",
+    "title": "Sprechen Sie mit uns",
+    "intro": "Haben Sie Fragen zu einem Fahrzeug oder möchten Sie Ihr Auto verkaufen? Wir sind gerne persönlich, telefonisch oder per E-Mail für Sie da.",
+    "addressTitle": "Adresse",
+    "hoursNote": "Termine nach Vereinbarung.",
+    "directionsCta": "Route in Google Maps öffnen",
+    "formTitle": "Nachricht senden",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon (optional)",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet…",
+      "success": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.",
+      "error": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder rufen Sie uns an.",
+      "required": "Pflichtfeld"
+    }
+  },
+  "legal": {
+    "impressumLabel": "Impressum",
+    "datenschutzLabel": "Datenschutz",
+    "germanOnlyNote": "This page is provided in German only, as required by German law (§ 5 TMG)."
+  },
+  "common": {
+    "backHome": "Zurück zur Startseite"
+  }
+}

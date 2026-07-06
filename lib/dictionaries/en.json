@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "home": {
+      "title": "J&J Fair Automobile – Car Dealership in Mainz-Kastel",
+      "description": "J&J Fair Automobile in Mainz-Kastel: fair buying and selling of used cars. Personal advice, fair prices, quality-checked vehicles."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Meet J&J Fair Automobile – an owner-run dealership in Mainz-Kastel led by Javad Ayoubi and Jusuf Dyanat."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact J&J Fair Automobile in Mainz-Kastel by phone, email, or our contact form."
+    },
+    "impressum": {
+      "title": "Legal Notice",
+      "description": "Legal notice (Impressum) of J&J Fair Automobile GbR."
+    },
+    "datenschutz": {
+      "title": "Privacy Policy",
+      "description": "Privacy policy of J&J Fair Automobile."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "inventory": "Inventory on mobile.de",
+    "call": "Call"
+  },
+  "hero": {
+    "eyebrow": "Fair prices. Honest advice.",
+    "title": "Your car, in good hands",
+    "subtitle": "J&J Fair Automobile – buying and selling quality used cars in Mainz-Kastel. Personal, transparent, fair.",
+    "ctaPrimary": "View vehicles",
+    "ctaSecondary": "Get in touch",
+    "scrollHint": "Scroll"
+  },
+  "whyUs": {
+    "eyebrow": "Why J&J Fair Automobile",
+    "title": "Fair by name, fair by nature",
+    "items": [
+      {
+        "title": "Fair prices",
+        "desc": "Transparent valuations and honest pricing — no hidden costs."
+      },
+      {
+        "title": "Quality checked",
+        "desc": "Every vehicle is carefully selected and inspected before it joins our lot."
+      },
+      {
+        "title": "Family-run",
+        "desc": "As an owner-run dealership, we personally stand behind every deal."
+      },
+      {
+        "title": "Personal service",
+        "desc": "From your first inquiry to handover, we take the time to get it right."
+      }
+    ]
+  },
+  "buySell": {
+    "eyebrow": "Buy & Sell",
+    "title": "Current Vehicles & Trade-Ins",
+    "inventoryTitle": "Our vehicles",
+    "inventoryDesc": "You can find our current stock on mobile.de. Stop by or reach out directly — we're happy to advise you in person.",
+    "inventoryCta": "View on mobile.de",
+    "sellTitle": "Sell your car",
+    "sellDesc": "Looking to sell your vehicle? We'll put together a fair, no-obligation offer — quickly and without hassle.",
+    "sellCta": "Get an offer"
+  },
+  "contactTeaser": {
+    "eyebrow": "Visit us",
+    "title": "We look forward to seeing you",
+    "directions": "Get directions",
+    "callUs": "Call us",
+    "emailUs": "Email us"
+  },
+  "footer": {
+    "tagline": "Fair prices. Honest advice. Your dealership in Mainz-Kastel.",
+    "quickLinksTitle": "Navigation",
+    "contactTitle": "Contact",
+    "followTitle": "Follow us",
+    "legalImpressum": "Legal Notice",
+    "legalDatenschutz": "Privacy Policy",
+    "rights": "All rights reserved."
+  },
+  "aboutPage": {
+    "eyebrow": "About us",
+    "title": "Two names, one promise: fair.",
+    "intro": "J&J Fair Automobile was founded by Javad Ayoubi and Jusuf Dyanat on the belief that buying and selling a car should be built on trust.",
+    "paragraphs": [
+      "As an owner-run dealership in Mainz-Kastel, we value personal advice, transparent pricing, and carefully selected vehicles. With us, you're never just a number — we take the time for your questions and needs.",
+      "Whether you're buying or selling, our goal is that you feel well looked after every step of the way — fair, honest, and without pressure."
+    ],
+    "valuesTitle": "Our values",
+    "values": [
+      { "title": "Trust", "desc": "Open communication and honest assessments, from the very first conversation." },
+      { "title": "Quality", "desc": "We carefully select every vehicle before it leaves our lot." },
+      { "title": "Proximity", "desc": "As a small team, we're personally reachable — right here in Mainz-Kastel." }
+    ]
+  },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "title": "Talk to us",
+    "intro": "Have a question about a vehicle, or want to sell your car? We're happy to help in person, by phone, or by email.",
+    "addressTitle": "Address",
+    "hoursNote": "By appointment.",
+    "directionsCta": "Open directions in Google Maps",
+    "formTitle": "Send us a message",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "message": "Message",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": "Thank you! Your message has been sent successfully.",
+      "error": "Something went wrong. Please try again or give us a call.",
+      "required": "Required"
+    }
+  },
+  "legal": {
+    "impressumLabel": "Legal Notice",
+    "datenschutzLabel": "Privacy Policy",
+    "germanOnlyNote": "This page is provided in German only, as required by German law (§ 5 TMG)."
+  },
+  "common": {
+    "backHome": "Back to home"
+  }
+}
