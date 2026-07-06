@@ -36,7 +36,5 @@ export const MOBILE_DE_URL = "#";
 export const SOCIAL = {
   instagram: "https://www.instagram.com/jj_fair_automobile/",
   tiktok: "https://www.tiktok.com/@jjfairautomobile",
-  // TODO: only a page name ("J&J Fair-Automobile") was provided, not a URL/slug —
-  // replace with the real Facebook page URL to avoid linking to the wrong page.
-  facebook: "#",
+  facebook: "https://www.facebook.com/people/JJ-Fair-Automobile/61591027891717/",
 } as const;
