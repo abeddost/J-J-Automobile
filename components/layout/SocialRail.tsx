@@ -9,7 +9,7 @@ const links = [
 
 export function SocialRail() {
   return (
-    <div className="fixed right-4 top-1/2 z-40 hidden -translate-y-1/2 flex-col gap-3 sm:flex lg:right-6">
+    <div className="fixed bottom-24 right-3 z-40 flex flex-col gap-2.5 sm:bottom-auto sm:right-4 sm:top-1/2 sm:-translate-y-1/2 sm:gap-3 lg:right-6">
       {links.map(({ href, label, Icon }) => (
         <a
           key={label}
@@ -19,7 +19,7 @@ export function SocialRail() {
           aria-label={label}
           className="inline-flex drop-shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:scale-110"
         >
-          <Icon size={40} />
+          <Icon size={40} className="h-8 w-8 sm:h-10 sm:w-10" />
         </a>
       ))}
     </div>
