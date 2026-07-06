@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { MapEmbed } from "@/components/contact/MapEmbed";
+import { Reveal } from "@/components/ui/Reveal";
 
 export async function generateMetadata({
   params,
@@ -34,20 +35,22 @@ export default async function ContactPage({
   return (
     <div className="py-20 sm:py-28">
       <Container>
-        <SectionHeading eyebrow={dict.contactPage.eyebrow} title={dict.contactPage.title} />
-        <p className="mt-6 max-w-xl text-base text-muted">{dict.contactPage.intro}</p>
+        <Reveal>
+          <SectionHeading eyebrow={dict.contactPage.eyebrow} title={dict.contactPage.title} />
+          <p className="mt-6 max-w-xl text-base text-muted">{dict.contactPage.intro}</p>
+        </Reveal>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-5">
-          <div className="lg:col-span-3">
+          <Reveal delay={0.1} className="lg:col-span-3">
             <h2 className="font-heading text-xl font-semibold text-foreground">
               {dict.contactPage.formTitle}
             </h2>
             <div className="mt-6">
               <ContactForm dict={dict} />
             </div>
-          </div>
+          </Reveal>
 
-          <div className="lg:col-span-2">
+          <Reveal delay={0.15} className="lg:col-span-2">
             <div className="rounded-2xl border border-border bg-surface p-6">
               <h2 className="font-heading text-lg font-semibold text-foreground">
                 {dict.contactPage.addressTitle}
@@ -83,7 +86,7 @@ export default async function ContactPage({
             </div>
 
             <MapEmbed directionsLabel={dict.contactPage.directionsCta} className="mt-6" />
-          </div>
+          </Reveal>
         </div>
       </Container>
     </div>

@@ -6,6 +6,8 @@ import { getDictionary, isLocale } from "@/lib/i18n";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SocialRail } from "@/components/layout/SocialRail";
+import { ScrollProgressBar } from "@/components/layout/ScrollProgressBar";
+import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -93,10 +95,12 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <ScrollProgressBar />
         <Header locale={locale} dict={dict} />
         <main className="flex-1">{children}</main>
         <Footer locale={locale} dict={dict} />
         <SocialRail />
+        <WhatsAppButton />
       </body>
     </html>
   );

@@ -4,6 +4,7 @@ import { useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Loader2, CheckCircle2, AlertCircle } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n";
+import { Reveal } from "@/components/ui/Reveal";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -34,7 +35,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
-      <div className="grid gap-5 sm:grid-cols-2">
+      <Reveal className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-foreground">
             {f.name}
@@ -60,9 +61,9 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
             className="w-full min-h-11 rounded-lg border border-border px-4 py-2.5 text-sm focus:border-gold focus:outline-none"
           />
         </div>
-      </div>
+      </Reveal>
 
-      <div>
+      <Reveal delay={0.08}>
         <label htmlFor="phone" className="mb-1.5 block text-sm font-medium text-foreground">
           {f.phone}
         </label>
@@ -72,9 +73,9 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
           type="tel"
           className="w-full min-h-11 rounded-lg border border-border px-4 py-2.5 text-sm focus:border-gold focus:outline-none"
         />
-      </div>
+      </Reveal>
 
-      <div>
+      <Reveal delay={0.16}>
         <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-foreground">
           {f.message}
         </label>
@@ -86,7 +87,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
           rows={5}
           className="w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:border-gold focus:outline-none"
         />
-      </div>
+      </Reveal>
 
       {/* Honeypot field: hidden from real users via CSS, catches naive bots. */}
       <div className="hidden" aria-hidden="true">
@@ -94,14 +95,16 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
         <input id="company" name="company" type="text" tabIndex={-1} autoComplete="off" />
       </div>
 
-      <button
-        type="submit"
-        disabled={status === "sending"}
-        className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-foreground px-8 text-sm font-medium text-white transition-colors hover:bg-gold-dark disabled:opacity-60"
-      >
-        {status === "sending" && <Loader2 size={16} className="animate-spin" />}
-        {status === "sending" ? f.sending : f.submit}
-      </button>
+      <Reveal delay={0.24}>
+        <button
+          type="submit"
+          disabled={status === "sending"}
+          className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-foreground px-8 text-sm font-medium text-white transition-colors hover:bg-gold-dark disabled:opacity-60"
+        >
+          {status === "sending" && <Loader2 size={16} className="animate-spin" />}
+          {status === "sending" ? f.sending : f.submit}
+        </button>
+      </Reveal>
 
       <AnimatePresence mode="wait">
         {status === "success" && (
