@@ -87,6 +87,11 @@
     "sellDesc": "Looking to sell your vehicle? We'll put together a fair, no-obligation offer — quickly and without hassle.",
     "sellCta": "Get an offer"
   },
+  "finalCta": {
+    "eyebrow": "Ready for your next car?",
+    "title": "Let's talk.",
+    "subtitle": "Give us a call or take a look at our current stock on mobile.de."
+  },
   "contactTeaser": {
     "eyebrow": "Visit us",
     "title": "We look forward to seeing you",

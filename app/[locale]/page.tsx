@@ -6,6 +6,7 @@ import { WhyUs } from "@/components/sections/WhyUs";
 import { BuySell } from "@/components/sections/BuySell";
 import { SellPitch } from "@/components/sections/SellPitch";
 import { ContactTeaser } from "@/components/sections/ContactTeaser";
+import { FinalCta } from "@/components/sections/FinalCta";
 
 export async function generateMetadata({
   params,
@@ -38,6 +39,7 @@ export default async function HomePage({
       <BuySell locale={locale} dict={dict} />
       <SellPitch locale={locale} dict={dict} />
       <ContactTeaser dict={dict} />
+      <FinalCta locale={locale} dict={dict} />
     </>
   );
 }

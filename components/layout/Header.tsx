@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Phone } from "lucide-react";
@@ -7,6 +10,17 @@ import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { MobileNav } from "@/components/layout/MobileNav";
 
 export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    function onScroll() {
+      setScrolled(window.scrollY > 40);
+    }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   const links = [
     { href: `/${locale}`, label: dict.nav.home },
     { href: `/${locale}/about`, label: dict.nav.about },
@@ -14,8 +28,16 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-white/90 backdrop-blur">
-      <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between px-5 sm:px-8">
+    <header
+      className={`sticky top-0 z-50 border-b border-border bg-white/90 backdrop-blur transition-shadow duration-300 ${
+        scrolled ? "shadow-sm" : ""
+      }`}
+    >
+      <div
+        className={`mx-auto flex h-24 w-full max-w-6xl items-center justify-between px-5 transition-[height] duration-300 sm:px-8 ${
+          scrolled ? "md:h-20" : ""
+        }`}
+      >
         <Link href={`/${locale}`} className="flex items-center gap-2" aria-label={BUSINESS.name}>
           <Image
             src="/logo-horizontal.png"
@@ -23,7 +45,9 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             width={246}
             height={100}
             priority
-            className="h-11 w-auto sm:h-14"
+            className={`h-14 w-auto transition-all duration-300 sm:h-[4.5rem] ${
+              scrolled ? "md:h-14" : ""
+            }`}
           />
         </Link>
 

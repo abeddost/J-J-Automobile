@@ -6,6 +6,8 @@ import type { Locale } from "@/lib/constants";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
+const numberColors = ["text-gold-dark", "text-teal-dark", "text-gold-dark", "text-teal-dark"];
+
 export function SellPitch({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   return (
     <section className="py-24 sm:py-32">
@@ -40,7 +42,7 @@ export function SellPitch({ locale, dict }: { locale: Locale; dict: Dictionary }
               className="flex flex-col gap-2 border-b border-border py-7 sm:flex-row sm:items-baseline sm:justify-between sm:gap-10"
             >
               <div className="flex items-baseline gap-4 sm:w-1/3">
-                <span className="font-heading text-sm text-gold-dark">
+                <span className={`font-heading text-sm ${numberColors[i % numberColors.length]}`}>
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="font-heading text-xl font-semibold text-foreground">

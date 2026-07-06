@@ -87,6 +87,11 @@
     "sellDesc": "Sie möchten Ihr Fahrzeug verkaufen? Wir erstellen Ihnen ein faires, unverbindliches Angebot – schnell und unkompliziert.",
     "sellCta": "Jetzt anfragen"
   },
+  "finalCta": {
+    "eyebrow": "Bereit für Ihr nächstes Auto?",
+    "title": "Lassen Sie uns sprechen.",
+    "subtitle": "Rufen Sie uns direkt an oder schauen Sie sich unseren aktuellen Bestand auf mobile.de an."
+  },
   "contactTeaser": {
     "eyebrow": "Besuchen Sie uns",
     "title": "Wir freuen uns auf Sie",

@@ -7,6 +7,11 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const icons = [HandCoins, BadgeCheck, Users];
+const iconStyles = [
+  "bg-gold-light/40 text-gold-dark",
+  "bg-teal-light/50 text-teal-dark",
+  "bg-silver-light/50 text-silver-dark",
+];
 
 export function WhyUs({ dict }: { dict: Dictionary }) {
   return (
@@ -26,7 +31,9 @@ export function WhyUs({ dict }: { dict: Dictionary }) {
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="rounded-2xl border border-border bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold-light/40 text-gold-dark">
+                <div
+                  className={`flex h-12 w-12 items-center justify-center rounded-full ${iconStyles[i % iconStyles.length]}`}
+                >
                   <Icon size={22} />
                 </div>
                 <h3 className="mt-5 font-heading text-xl font-semibold text-foreground">

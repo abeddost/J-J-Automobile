@@ -14,6 +14,15 @@
   --silver-light: #d9dbde;
   --silver-dark: #6e7378;
 
+  /* Teal accent, pulled from the hero car's paint color — a "cool" third
+     accent alongside gold/silver, used sparingly for contrast. */
+  --teal: #3f8fa3;
+  --teal-light: #bfe3ea;
+  --teal-dark: #2a6674;
+
+  /* Richer near-black than --foreground, for dark section backgrounds. */
+  --ink: #0e0e12;
+
   --border: #e7e5e1;
 }
 
@@ -30,6 +39,12 @@
   --color-silver: var(--silver);
   --color-silver-light: var(--silver-light);
   --color-silver-dark: var(--silver-dark);
+
+  --color-teal: var(--teal);
+  --color-teal-light: var(--teal-light);
+  --color-teal-dark: var(--teal-dark);
+
+  --color-ink: var(--ink);
 
   --color-border: var(--border);
 
@@ -62,4 +77,22 @@ body {
 
 .text-balance {
   text-wrap: balance;
+}
+
+@keyframes float-orb {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(3%, -4%) scale(1.08);
+  }
+}
+
+.animate-float-orb {
+  animation: float-orb 12s ease-in-out infinite;
+}
+
+.animate-float-orb-slow {
+  animation: float-orb 16s ease-in-out infinite reverse;
 }
