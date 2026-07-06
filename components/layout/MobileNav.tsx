@@ -44,7 +44,7 @@ export function MobileNav({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="fixed inset-0 top-24 z-40 bg-white"
+          className="fixed inset-0 top-32 z-40 bg-white"
         >
           <motion.nav
             initial={{ y: -16, opacity: 0 }}

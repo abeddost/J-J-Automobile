@@ -34,8 +34,8 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       }`}
     >
       <div
-        className={`mx-auto flex h-24 w-full max-w-6xl items-center justify-between px-5 transition-[height] duration-300 sm:px-8 ${
-          scrolled ? "md:h-20" : ""
+        className={`mx-auto flex h-32 w-full max-w-6xl items-center justify-between px-5 transition-[height] duration-300 sm:px-8 ${
+          scrolled ? "md:h-28" : ""
         }`}
       >
         <Link href={`/${locale}`} className="flex items-center gap-2" aria-label={BUSINESS.name}>
@@ -45,8 +45,8 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             width={246}
             height={100}
             priority
-            className={`h-14 w-auto transition-all duration-300 sm:h-[4.5rem] ${
-              scrolled ? "md:h-14" : ""
+            className={`h-[5.25rem] w-auto transition-all duration-300 sm:h-[6.75rem] ${
+              scrolled ? "md:h-[5.25rem]" : ""
             }`}
           />
         </Link>
