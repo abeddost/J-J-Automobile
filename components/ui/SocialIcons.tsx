@@ -56,7 +56,16 @@ export function TikTokIcon({ size = 20, className }: IconProps) {
     "M16.6 5.82a4.28 4.28 0 0 1-3.14-1.39V15.5a5.5 5.5 0 1 1-5.5-5.5c.19 0 .38.01.56.04v2.44a2.9 2.9 0 0 0-.56-.05 3.07 3.07 0 1 0 3.07 3.07V2h2.4a4.28 4.28 0 0 0 3.17 4.13v2.31a6.6 6.6 0 0 1-2.4-.45v6a5.06 5.06 0 0 1-.02.4z";
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
-      <rect width="24" height="24" rx="6.5" fill="#010101" />
+      <rect
+        x="0.5"
+        y="0.5"
+        width="23"
+        height="23"
+        rx="6"
+        fill="#010101"
+        stroke="white"
+        strokeOpacity="0.15"
+      />
       <path d={note} fill="#25F4EE" transform="translate(-0.9 0.5)" />
       <path d={note} fill="#FE2C55" transform="translate(0.9 -0.5)" />
       <path d={note} fill="#FFFFFF" />

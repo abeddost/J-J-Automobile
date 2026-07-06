@@ -45,7 +45,6 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             width={246}
             height={100}
             priority
-            unoptimized
             className={`h-[5.25rem] w-auto transition-all duration-300 sm:h-[6.75rem] ${
               scrolled ? "md:h-[5.25rem]" : ""
             }`}

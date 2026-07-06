@@ -24,7 +24,6 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             alt={BUSINESS.name}
             width={246}
             height={100}
-            unoptimized
             className="h-16 w-auto"
           />
           <p className="mt-4 max-w-xs text-sm text-muted">{dict.footer.tagline}</p>
