@@ -40,7 +40,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       >
         <Link href={`/${locale}`} className="flex items-center gap-2" aria-label={BUSINESS.name}>
           <Image
-            src="/logo-wordmark.png"
+            src="/logo-wordmark-v2.png"
             alt={BUSINESS.name}
             width={246}
             height={100}

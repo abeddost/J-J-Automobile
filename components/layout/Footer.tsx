@@ -20,7 +20,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       <Container className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <Image
-            src="/logo-wordmark.png"
+            src="/logo-wordmark-v2.png"
             alt={BUSINESS.name}
             width={246}
             height={100}
