@@ -42,6 +42,9 @@ export async function generateMetadata({
       template: `%s · ${BUSINESS.name}`,
     },
     description: dict.meta.home.description,
+    verification: {
+      google: "kL3YQ1kB_jjV74HZaxsljKHmxEwPFx42FiZX4eeopz8",
+    },
     alternates: {
       canonical: `/${locale}`,
       languages: {
