@@ -1,20 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BadgeCheck, HandCoins, Heart, Users } from "lucide-react";
+import { BadgeCheck, HandCoins, Users } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
-const icons = [HandCoins, BadgeCheck, Users, Heart];
+const icons = [HandCoins, BadgeCheck, Users];
 
 export function WhyUs({ dict }: { dict: Dictionary }) {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-24 sm:py-32">
       <Container>
         <SectionHeading eyebrow={dict.whyUs.eyebrow} title={dict.whyUs.title} align="center" />
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-6 sm:grid-cols-3">
           {dict.whyUs.items.map((item, i) => {
             const Icon = icons[i % icons.length];
             return (
@@ -24,15 +24,15 @@ export function WhyUs({ dict }: { dict: Dictionary }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="rounded-2xl border border-border bg-white p-6"
+                className="rounded-2xl border border-border bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gold-light/40 text-gold-dark">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold-light/40 text-gold-dark">
                   <Icon size={22} />
                 </div>
-                <h3 className="mt-4 font-heading text-lg font-semibold text-foreground">
+                <h3 className="mt-5 font-heading text-xl font-semibold text-foreground">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm text-muted">{item.desc}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{item.desc}</p>
               </motion.div>
             );
           })}

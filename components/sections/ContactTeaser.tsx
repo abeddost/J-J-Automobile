@@ -3,21 +3,22 @@
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
 import type { Dictionary } from "@/lib/i18n";
-import { BUSINESS, MAPS_DIRECTIONS_URL } from "@/lib/constants";
+import { BUSINESS } from "@/lib/constants";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
+import { ContactForm } from "@/components/contact/ContactForm";
+import { MapEmbed } from "@/components/contact/MapEmbed";
 
 export function ContactTeaser({ dict }: { dict: Dictionary }) {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-24 sm:py-32">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5 }}
-          className="rounded-3xl border border-border bg-surface p-8 sm:p-12"
         >
           <SectionHeading eyebrow={dict.contactTeaser.eyebrow} title={dict.contactTeaser.title} />
 
@@ -32,10 +33,6 @@ export function ContactTeaser({ dict }: { dict: Dictionary }) {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <Button href={MAPS_DIRECTIONS_URL} external variant="secondary">
-                <MapPin size={16} />
-                {dict.contactTeaser.directions}
-              </Button>
               <Button href={BUSINESS.phones[0].href} variant="secondary">
                 <Phone size={16} />
                 {dict.contactTeaser.callUs}
@@ -45,6 +42,18 @@ export function ContactTeaser({ dict }: { dict: Dictionary }) {
                 {dict.contactTeaser.emailUs}
               </Button>
             </div>
+          </div>
+
+          <div className="mt-10 grid gap-8 rounded-3xl border border-border bg-surface p-8 sm:p-10 lg:grid-cols-2">
+            <div>
+              <h3 className="font-heading text-xl font-semibold text-foreground">
+                {dict.contactPage.formTitle}
+              </h3>
+              <div className="mt-5">
+                <ContactForm dict={dict} />
+              </div>
+            </div>
+            <MapEmbed directionsLabel={dict.contactTeaser.directions} />
           </div>
         </motion.div>
       </Container>

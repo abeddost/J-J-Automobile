@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { DEFAULT_LOCALE, BUSINESS, MAPS_DIRECTIONS_URL } from "@/lib/constants";
+import { DEFAULT_LOCALE, BUSINESS } from "@/lib/constants";
 import { getDictionary, isLocale } from "@/lib/i18n";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Button } from "@/components/ui/Button";
 import { ContactForm } from "@/components/contact/ContactForm";
+import { MapEmbed } from "@/components/contact/MapEmbed";
 
 export async function generateMetadata({
   params,
@@ -80,14 +80,9 @@ export default async function ContactPage({
               <p className="mt-5 text-xs uppercase tracking-wide text-muted">
                 {dict.contactPage.hoursNote}
               </p>
-
-              <div className="mt-6">
-                <Button href={MAPS_DIRECTIONS_URL} external variant="primary" className="w-full">
-                  <MapPin size={16} />
-                  {dict.contactPage.directionsCta}
-                </Button>
-              </div>
             </div>
+
+            <MapEmbed directionsLabel={dict.contactPage.directionsCta} className="mt-6" />
           </div>
         </div>
       </Container>

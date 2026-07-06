@@ -21,11 +21,14 @@ export const BUSINESS = {
   ],
 } as const;
 
+const FULL_ADDRESS = `${BUSINESS.address.street}, ${BUSINESS.address.zip} ${BUSINESS.address.city}`;
+
 export const MAPS_DIRECTIONS_URL =
-  "https://www.google.com/maps/dir/?api=1&destination=" +
-  encodeURIComponent(
-    `${BUSINESS.address.street}, ${BUSINESS.address.zip} ${BUSINESS.address.city}`
-  );
+  "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(FULL_ADDRESS);
+
+// No API key needed for the basic `output=embed` iframe form.
+export const MAPS_EMBED_URL =
+  "https://www.google.com/maps?q=" + encodeURIComponent(FULL_ADDRESS) + "&output=embed";
 
 // TODO: replace with the real mobile.de dealer page URL once provided.
 export const MOBILE_DE_URL = "#";

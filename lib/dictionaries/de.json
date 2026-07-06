@@ -30,10 +30,11 @@
   },
   "hero": {
     "eyebrow": "Faire Preise. Ehrliche Beratung.",
-    "title": "Ihr Fahrzeug in besten Händen",
-    "subtitle": "J&J Fair Automobile – An- und Verkauf hochwertiger Gebrauchtwagen in Mainz-Kastel. Persönlich, transparent, fair.",
+    "title": "Ihr nächstes Auto wartet auf Sie",
+    "subtitle": "Geprüfte Gebrauchtwagen, faire Preise und persönliche Beratung in Mainz-Kastel.",
     "ctaPrimary": "Fahrzeuge ansehen",
     "ctaSecondary": "Kontakt aufnehmen",
+    "ctaInventory": "Unseren Bestand ansehen",
     "scrollHint": "Scrollen"
   },
   "whyUs": {
@@ -49,12 +50,30 @@
         "desc": "Jedes Fahrzeug wird sorgfältig ausgewählt und begutachtet, bevor es zu uns kommt."
       },
       {
-        "title": "Familiengeführt",
-        "desc": "Als inhabergeführtes Autohaus stehen wir persönlich für jeden Handel gerade."
-      },
-      {
         "title": "Persönlicher Service",
         "desc": "Von der ersten Anfrage bis zur Übergabe – wir nehmen uns Zeit für Sie."
+      }
+    ]
+  },
+  "sellPitch": {
+    "eyebrow": "Fahrzeug verkaufen",
+    "title": "Wir kaufen Ihr Auto — fair und unkompliziert.",
+    "items": [
+      {
+        "title": "Schnelle Antwort",
+        "desc": "Sie erhalten von uns innerhalb eines Werktages eine erste Einschätzung Ihres Fahrzeugs."
+      },
+      {
+        "title": "Faire Bewertung",
+        "desc": "Wir bewerten Ihr Fahrzeug transparent nach aktuellem Marktwert – ohne Verhandlungstricks."
+      },
+      {
+        "title": "Unkomplizierte Abwicklung",
+        "desc": "Vom ersten Kontakt bis zur Übergabe kümmern wir uns persönlich um alle Formalitäten."
+      },
+      {
+        "title": "Sichere Auszahlung",
+        "desc": "Bezahlung per Überweisung oder bar bei Übergabe – ganz wie es Ihnen am liebsten ist."
       }
     ]
   },

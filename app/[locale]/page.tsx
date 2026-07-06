@@ -4,6 +4,7 @@ import { getDictionary, isLocale } from "@/lib/i18n";
 import { HeroReveal } from "@/components/hero/HeroReveal";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { BuySell } from "@/components/sections/BuySell";
+import { SellPitch } from "@/components/sections/SellPitch";
 import { ContactTeaser } from "@/components/sections/ContactTeaser";
 
 export async function generateMetadata({
@@ -35,6 +36,7 @@ export default async function HomePage({
       <HeroReveal locale={locale} dict={dict} />
       <WhyUs dict={dict} />
       <BuySell locale={locale} dict={dict} />
+      <SellPitch locale={locale} dict={dict} />
       <ContactTeaser dict={dict} />
     </>
   );

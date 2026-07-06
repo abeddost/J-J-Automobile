@@ -5,6 +5,7 @@ import { LOCALES, DEFAULT_LOCALE, BUSINESS, SITE_URL, type Locale } from "@/lib/
 import { getDictionary, isLocale } from "@/lib/i18n";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SocialRail } from "@/components/layout/SocialRail";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -95,6 +96,7 @@ export default async function LocaleLayout({
         <Header locale={locale} dict={dict} />
         <main className="flex-1">{children}</main>
         <Footer locale={locale} dict={dict} />
+        <SocialRail />
       </body>
     </html>
   );

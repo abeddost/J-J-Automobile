@@ -7,7 +7,7 @@ import { ChevronDown } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import type { Dictionary } from "@/lib/i18n";
-import type { Locale } from "@/lib/constants";
+import { MOBILE_DE_URL, type Locale } from "@/lib/constants";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -242,9 +242,17 @@ export function HeroReveal({ locale, dict }: { locale: Locale; dict: Dictionary 
           style={{ opacity: outroOpacity }}
         >
           <div className="pointer-events-auto flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={MOBILE_DE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 items-center justify-center rounded-full bg-foreground px-7 text-sm font-medium text-white transition-all duration-200 hover:scale-[1.03] hover:bg-gold-dark hover:shadow-lg"
+            >
+              {dict.hero.ctaInventory}
+            </a>
             <Link
               href={`/${locale}/contact`}
-              className="inline-flex min-h-12 items-center justify-center rounded-full bg-foreground px-7 text-sm font-medium text-white transition-colors hover:bg-gold-dark"
+              className="inline-flex min-h-12 items-center justify-center rounded-full border border-foreground/20 px-7 text-sm font-medium text-foreground transition-all duration-200 hover:scale-[1.03] hover:border-gold hover:text-gold-dark"
             >
               {dict.hero.ctaSecondary}
             </Link>
@@ -279,10 +287,10 @@ function HeroCopy({
       <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-gold-dark">
         {dict.hero.eyebrow}
       </p>
-      <h1 className="text-balance font-heading text-4xl font-semibold text-foreground sm:text-5xl lg:text-6xl">
+      <h1 className="text-balance font-heading text-5xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
         {dict.hero.title}
       </h1>
-      <p className="mx-auto mt-5 max-w-lg text-balance text-base text-muted sm:text-lg">
+      <p className="mx-auto mt-6 max-w-lg text-balance text-base text-muted sm:text-lg">
         {dict.hero.subtitle}
       </p>
       {showButtons && (

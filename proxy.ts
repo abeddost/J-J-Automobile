@@ -5,15 +5,12 @@ import { LOCALES, DEFAULT_LOCALE } from "@/lib/constants";
 const LOCALE_COOKIE = "NEXT_LOCALE";
 
 function detectLocale(request: NextRequest): string {
+  // German is always the default for first-time visitors, regardless of
+  // browser language — only an explicit prior choice (the locale cookie,
+  // set by the language switcher) overrides it.
   const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value;
   if (cookieLocale && (LOCALES as readonly string[]).includes(cookieLocale)) {
     return cookieLocale;
-  }
-
-  const acceptLanguage = request.headers.get("accept-language") ?? "";
-  const preferred = acceptLanguage.split(",")[0]?.split("-")[0]?.toLowerCase();
-  if (preferred && (LOCALES as readonly string[]).includes(preferred)) {
-    return preferred;
   }
 
   return DEFAULT_LOCALE;

@@ -30,10 +30,11 @@
   },
   "hero": {
     "eyebrow": "Fair prices. Honest advice.",
-    "title": "Your car, in good hands",
-    "subtitle": "J&J Fair Automobile – buying and selling quality used cars in Mainz-Kastel. Personal, transparent, fair.",
+    "title": "Your next car is waiting for you",
+    "subtitle": "Inspected used cars, fair prices, and personal advice in Mainz-Kastel.",
     "ctaPrimary": "View vehicles",
     "ctaSecondary": "Get in touch",
+    "ctaInventory": "View our inventory",
     "scrollHint": "Scroll"
   },
   "whyUs": {
@@ -49,12 +50,30 @@
         "desc": "Every vehicle is carefully selected and inspected before it joins our lot."
       },
       {
-        "title": "Family-run",
-        "desc": "As an owner-run dealership, we personally stand behind every deal."
-      },
-      {
         "title": "Personal service",
         "desc": "From your first inquiry to handover, we take the time to get it right."
+      }
+    ]
+  },
+  "sellPitch": {
+    "eyebrow": "Sell your car",
+    "title": "We buy your car — fair and hassle-free.",
+    "items": [
+      {
+        "title": "Fast Response",
+        "desc": "You'll get an initial assessment of your car from us within one business day."
+      },
+      {
+        "title": "Fair Valuation",
+        "desc": "We value your car transparently at current market rates — no negotiation tricks."
+      },
+      {
+        "title": "Hassle-Free Process",
+        "desc": "From first contact to handover, we personally handle all the paperwork."
+      },
+      {
+        "title": "Secure Payment",
+        "desc": "Payment by bank transfer or cash on handover — whichever you prefer."
       }
     ]
   },

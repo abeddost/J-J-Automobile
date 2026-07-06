@@ -99,19 +99,47 @@ export default async function DatenschutzPage({
           </section>
 
           <section>
-            <h2 className="font-heading text-lg font-semibold text-foreground">4. Cookies</h2>
+            <h2 className="font-heading text-lg font-semibold text-foreground">
+              4. Google Maps
+            </h2>
+            <p className="mt-2">
+              Auf unserer Kontaktseite und Startseite binden wir eine Karte des Dienstes Google
+              Maps ein, um Ihnen die Anfahrt zu unserem Standort zu erleichtern. Anbieter ist
+              Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Beim Aufruf
+              der Seite wird eine Verbindung zu Servern von Google hergestellt, wobei unter
+              anderem Ihre IP-Adresse an Google übermittelt werden kann; eine Verarbeitung kann
+              dabei auch auf Servern in den USA erfolgen. Rechtsgrundlage ist unser berechtigtes
+              Interesse an einer nutzerfreundlichen Standortdarstellung (Art. 6 Abs. 1 lit. f
+              DSGVO). Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der
+              Datenschutzerklärung von Google:{" "}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold-dark hover:underline"
+              >
+                policies.google.com/privacy
+              </a>
+              .
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-heading text-lg font-semibold text-foreground">5. Cookies</h2>
             <p className="mt-2">
               Diese Website verwendet ein technisch notwendiges Cookie (
               <code className="rounded bg-surface px-1.5 py-0.5 text-xs">NEXT_LOCALE</code>), um
               Ihre gewählte Sprache (Deutsch/Englisch) zu speichern. Dieses Cookie ist für die
               Funktion der Website erforderlich und wird auf Grundlage von Art. 6 Abs. 1 lit. f
-              DSGVO gesetzt. Es werden derzeit keine Analyse- oder Marketing-Cookies eingesetzt.
+              DSGVO gesetzt. Beim Laden der Google-Maps-Karte (siehe Abschnitt 4) können zudem
+              Cookies von Google gesetzt werden, auf die wir keinen Einfluss haben. Es werden
+              darüber hinaus keine Analyse- oder Marketing-Cookies eingesetzt.
             </p>
           </section>
 
           <section>
             <h2 className="font-heading text-lg font-semibold text-foreground">
-              5. Ihre Rechte
+              6. Ihre Rechte
             </h2>
             <p className="mt-2">
               Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezogenen
