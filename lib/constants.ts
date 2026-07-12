@@ -35,7 +35,7 @@ export const MAPS_EMBED_URL =
 export const MOBILE_DE_URL = "#";
 
 export const SOCIAL = {
-  instagram: "https://www.instagram.com/jj_fair_automobile/",
-  tiktok: "https://www.tiktok.com/@jjfairautomobile",
-  facebook: "https://www.facebook.com/people/JJ-Fair-Automobile/61591027891717/",
+  instagram: "https://www.instagram.com/jj_automobile_mainzkastel/",
+  tiktok: "https://www.tiktok.com/@jjautomobilemainzkastel",
+  facebook: "https://www.facebook.com/people/JJ-Automobile-Mainz-Kastel/61591027891717/",
 } as const;
